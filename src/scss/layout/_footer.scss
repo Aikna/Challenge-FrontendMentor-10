@@ -1,0 +1,55 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.comments {
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding-top: 10rem;
+    }
+    .comment {
+        color: v.$White;
+        background-color: v.$VeryDarkMagenta;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        @include m.tablet {
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+
+            .header__img {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+            }
+
+        }
+    }
+    .comment:first-of-type {
+        margin-top: 6rem;
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+
+    .comment__txt {padding: 2rem 0;}
+}
+
+.comment:nth-of-type(2) {
+    @include m.tablet {transform: translateY(10%);}
+}
+.comment:nth-of-type(3) {
+    @include m.tablet {transform: translateY(20%);}
+}
+
+.container-data {
+
+    .container-data__name {font-weight: bold;}
+    .container-data__status {color:v.$SoftPink;}
+}

@@ -1,0 +1,12 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+//Globals
+
+.container {
+    padding: 4rem 2rem;
+    @include m.tablet {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+}

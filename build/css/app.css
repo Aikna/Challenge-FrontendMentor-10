@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  background-image: url(../../../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsl(300, 43%, 22%);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  padding: 4rem 2rem;
+}
+@media (min-width: 736px) {
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+
+.main {
+  text-align: center;
+}
+@media (min-width: 736px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 6rem;
+  }
+}
+
+@media (min-width: 736px) {
+  .main-container {
+    text-align: left;
+  }
+}
+.main-container .main-container__title {
+  line-height: 1;
+  font-size: 4rem;
+  margin: 2rem 5rem;
+}
+@media (min-width: 736px) {
+  .main-container .main-container__title {
+    margin: 2rem 0;
+    max-width: 30rem;
+    font-size: 4.5rem;
+  }
+}
+.main-container .main-container__description {
+  color: hsl(303, 10%, 53%);
+}
+@media (min-width: 736px) {
+  .main-container .main-container__description {
+    max-width: 38rem;
+  }
+}
+
+.reviews .review {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+}
+@media (min-width: 736px) {
+  .reviews .review {
+    display: flex;
+    justify-content: center;
+    max-width: 45rem;
+    gap: 1rem;
+  }
+}
+.reviews .review .star {
+  display: inline-block;
+}
+.reviews .review .review__txt {
+  font-weight: bold;
+}
+@media (min-width: 736px) {
+  .reviews .review .review__txt {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 736px) {
+  .review:nth-of-type(1) {
+    transform: translateX(-20%);
+  }
+}
+
+@media (min-width: 736px) {
+  .review:nth-of-type(2) {
+    transform: translateX(-10%);
+  }
+}
+
+@media (min-width: 736px) {
+  .comments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-top: 10rem;
+  }
+}
+.comments .comment {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 736px) {
+  .comments .comment {
+    margin: 0;
+  }
+}
+.comments .comment .header {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.comments .comment .header .header__img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.comments .comment:first-of-type {
+  margin-top: 6rem;
+}
+@media (min-width: 736px) {
+  .comments .comment:first-of-type {
+    margin: 0;
+  }
+}
+.comments .comment__txt {
+  padding: 2rem 0;
+}
+
+@media (min-width: 736px) {
+  .comment:nth-of-type(2) {
+    transform: translateY(10%);
+  }
+}
+
+@media (min-width: 736px) {
+  .comment:nth-of-type(3) {
+    transform: translateY(20%);
+  }
+}
+
+.container-data .container-data__name {
+  font-weight: bold;
+}
+.container-data .container-data__status {
+  color: hsl(333, 80%, 67%);
+}
+
+/*# sourceMappingURL=app.css.map */
